@@ -1,10 +1,10 @@
-.wrapper{
+.loading{
     width: 200px;
     height: 200px;
     /* border: 1px solid red; */
     position: relative;
 }
-.wrapper::before,.wrapper::after{
+.loading::before,.loading::after{
     content: '';
     position: absolute;
     width: 0px;
@@ -19,7 +19,7 @@
     margin: auto;
     animation: s 1.5s linear infinite;
 }
-.wrapper::after{
+.loading::after{
     animation-delay: 0.75s;
 }
 @keyframes s {
