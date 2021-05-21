@@ -12,7 +12,8 @@
             border: 1px solid red;
             position: relative;
         }
-        .circle{
+        .wrapper::before,.wrapper::after{
+            content: '';
             position: absolute;
             width: 0px;
             height: 0px;
@@ -26,7 +27,7 @@
             margin: auto;
             animation: s 1.5s linear infinite;
         }
-        .circle:nth-child(2){
+        .wrapper::after{
             animation-delay: 0.75s;
         }
         @keyframes s {
@@ -47,10 +48,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="circle">
-        
-        </div>
-        <div class="circle"></div>
+
     </div>
     <script src="./main.js"></script>
 </body>
